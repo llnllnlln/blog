@@ -8,15 +8,17 @@
     "docs:build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
     "docs:dev": "vuepress dev src",
-    "docs:update-package": "yarn dlx vp-update"
+    "docs:update-package": "yarn dlx vp-update",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.66",
-    "vue": "^3.2.47",
+    "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.66",
     "vuepress-theme-hope": "2.0.0-beta.233"
   },
   "dependencies": {
+    "@vue/compiler-sfc": "3.3.4",
     "vuepress-plugin-rss": "^2.0.0",
     "vuepress-plugin-search-pro": "2.0.0-beta.233"
   }
